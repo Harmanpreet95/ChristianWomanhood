@@ -1,0 +1,198 @@
+page-subscriptions-details {
+    .details-page{ 
+        .detai-img{
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            img {
+                display: inline-block;
+                text-align: center;
+                border: solid 8px #ececec;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            border-left: solid 5px #17a1a1;
+            padding: 4px 0 4px 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 17px;
+            line-height: 24px;
+            color: #242424;
+        }
+        p.detail-price {
+            font-size: 23px;
+            font-weight: 600;
+            border-bottom: solid 1px #cfcfcf;
+            padding-bottom: 20px;
+        }
+        form {
+            width: 100%;
+            float: left;
+        }
+        .value-button {
+            display: inline-block;
+            border: 1px solid #a3a3a3;
+            margin: 0px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px 0;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-size: 20px;
+            float: leftl
+        }
+        .value-button:hover {
+            cursor: pointer;
+        }
+        
+        form #decrease {
+            margin-right: -1px;
+            margin-top: 0px;
+        }
+        
+        form #increase {
+            margin-left: -1px;
+            margin-top: 0px;
+        }
+        
+        form #input-wrap {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        input#number {
+            text-align: center;
+            border: none;
+            border: 1px solid #a3a3a3;
+            margin: 0px;
+            width: 50px;
+            height: 40px;
+            color: #000;
+            border-radius: 0;
+            box-shadow: initial;
+        }
+        
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .cate-detail {
+            p {
+              margin: 0;
+              text-align: right;
+              font-size: 19px;
+              span {
+                 color: #e27926;
+              }
+           }
+        }
+        a.add-details-cart {
+            float: left;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            background: #e27926;
+            font-weight: 500;
+            line-height: 26px;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        
+    } 
+    .slider-inner {
+        padding: 0 6px;
+        img {
+            border: solid 5px #ececec;
+            width: 100%;
+            display: inline-block;
+        }
+        h2 {
+            font-size: 16px;
+            line-height: 24px;
+            min-height: 77px
+        }
+        p {
+            font-size: 18px;
+            color: #e07118;
+            font-weight: 600;
+            margin: 0;
+        } 
+        button.add-to {
+            display: inline-block;
+            background: #17a1a1;
+            padding: 6px 14px;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 16px;
+            text-transform: capitalize;
+            margin-top: 11px;
+        }
+    }
+    .swiper-container.swiper-container-horizontal {
+        padding-bottom: 40px;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 0;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    page-subscriptions-details {
+          .slider-inner {
+              img {
+                  border: solid 3px #ececec;
+              }
+              h2 {
+                  font-size: 14px;
+                  line-height: 20px;
+              }
+              p {
+                  font-size: 16px;
+              } 
+              button.add-to {
+                  padding: 6px 12px;
+                  color: #fff;
+                  font-size: 14px;
+              }
+          }
+          .details-page{ 
+              .value-button {   
+                  width: 28px;
+              }
+              h2 {
+                  font-size: 20px;
+              }
+              input#number {
+                  width: 28px; 
+              }  
+              .cate-detail {
+                  p {
+                    font-size: 15px;
+                 }
+              }
+          } 
+     }   
+  }
+  @media screen and (max-width: 360px) {
+    page-subscriptions-details {
+          .slider-inner {
+              button.add-to {
+                  padding: 6px 6px;
+                  font-size: 13px;
+              }
+          } 
+     }   
+  }
+  

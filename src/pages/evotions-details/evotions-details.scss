@@ -1,0 +1,19 @@
+page-evotions-details {
+    h2 a {
+        font-size: 20px;
+    }
+    a {
+        color: #000;
+        &:hover{
+          color: #e27926;
+        }
+      }
+      p.fusion-single-line-meta {
+        border-top: solid 1px #ccc;
+        border-bottom: solid 1px #ccc;
+        padding: 5px 0;
+    }
+    p.desc {
+        text-align: justify;
+    }
+}

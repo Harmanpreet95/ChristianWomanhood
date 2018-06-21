@@ -1,0 +1,127 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle (click)="openMenu()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+      <ion-title>
+          <ion-row>
+        <h2 col-12>Christian Womanhood</h2>
+        <!-- <div col-1 class="hed-right">
+            <div class="cart" (click)="cart()"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"><span>{{this.countitem}}</span></ion-icon></div>
+        </div> -->
+      </ion-row>
+      </ion-title>
+      
+    </ion-navbar>
+ </ion-header>
+
+<ion-content padding>
+
+<!-- <ion-row> -->
+  <!-- <ion-grid>
+    <ion-row>
+     <ion-col col-4 *ngFor = "let subscribed of this.subscribed_products">
+       <div class="home-pro">
+          <a href="#">
+           <img [src]="subscribed.product_image">
+           <div class="overlay-pro">
+              <div class="pro-middle">
+                  <p>{{subscribed.product_title}}</p>
+              </div>
+           </div>
+          </a>
+       </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <ion-grid>
+      <ion-row>
+       <ion-col class="mother-love top-t">
+              <a><img src="assets/imgs/thoughts.jpg">
+              <p>"Inspiring Thoughts for your daily needs"</p>
+              </a>
+              
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+<!-- </ion-row> -->
+
+
+  <ion-grid>
+      <ion-row>
+       <ion-col class="cw">
+              <a (click)="cwfridays()"><img src="assets/imgs/cw.jpg"></a>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+      <ion-row>
+       <ion-col class="mother-love">
+              <a (click)="Evotions()"><img src="assets/imgs/evotions.jpg">
+              <p>Evotions</p>
+              </a>
+              
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+     <ion-col class="mother-love">
+            <a (click)="cat(1)"><img src="assets/imgs/Faith.jpg">
+            <p>Faith</p>
+            </a>
+            
+      </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+   <ion-col class="mother-love">
+          <a (click)="cat(107)"><img src="assets/imgs/Hurts.jpg">
+          <p>Hurts</p>
+          </a>
+          
+    </ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+   <ion-col class="mother-love">
+          <a (click)="cat(83)"><img src="assets/imgs/marriage.jpg">
+          <p>Marriage</p>
+          </a>
+          
+    </ion-col>
+</ion-row>
+</ion-grid>
+
+    <ion-grid class="padd-top">
+      <ion-row>
+       <ion-col col-8 class="heading-sec" >
+          <h2>Shop</h2>
+          <p>Latest Products</p>
+        </ion-col>
+        <ion-col col-4 class="button" >
+            <a (click)="Allproducts()">more<ion-icon ios="ios-arrow-forward" md="ios-arrow-forward-outline"></ion-icon></a>
+          </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+      <ion-row >
+        <ion-slides (ionSlideDidChange)="slideChanged()" slidesPerView='3' pager="true">
+            <ion-slide *ngFor="let item of items">
+                        <div class="slider-inner">
+                            <img [src]="item.product_image" (click)="detail(item.product_id)">
+                            <h2 limit-to="4">{{item.product_title}}</h2>
+                            <!-- <button class="add-to" type="button" (click)="addtocart(item.product_id,item.product_title,item.product_image,item.price)">Add To Cart</button>  -->
+                        </div>
+            </ion-slide>
+          </ion-slides>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+

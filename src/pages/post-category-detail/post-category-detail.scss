@@ -1,0 +1,114 @@
+page-post-category-detail {
+    .calcilate-form {
+        background: #f7f7f7;
+        padding: 14px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 16px 0;
+        }
+        h4 {
+            font-size: 19px;
+        }
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            margin: 0 0;
+        }
+        table, tbody, tr {
+            width: 100%;
+            display: inline-block;
+            th, td {
+                width: 50%;
+                float: left;
+                text-align: left;
+                font-size: 19px;
+                font-weight: inherit;
+                color: #242424;
+                padding: 6px 0;
+            }
+            td {
+                text-align: right;
+            }
+            tr.cart-total {
+                border-top: solid 1px #e2e2e2;
+                margin-top: 14px;
+                padding-top: 10px;
+                th, td {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    .checkout-button {
+        a {
+           width: 100%;
+           float: left;
+           text-align: center;
+           font-size: 21px;
+           color: #fff;
+           font-size: 20px;
+           padding: 10px 4px;
+           background: #17a1a1
+       }
+   }
+   .video-sec{
+       div.description{
+           text-align : justify;
+       }
+        ul {
+         padding: 0;
+         width: 100%;
+         float: left;
+         margin-left: -10px; 
+          li {
+             list-style: none;
+             float: left;
+             padding: 0px 10px;
+             border-right: solid 1px #ccc;
+             font-size: 14px;
+             margin: 2px 0;
+             color: #000;
+             a {
+                list-style: none;
+                float: left;
+                font-size: 14px;
+                color: #000;
+             }
+          }
+        }
+        a {
+            list-style: none;
+            float: left;
+            font-size: 14px;
+            color: #000;
+         }
+        button {
+            padding: 12px;
+            background: #17a1a1;
+            color: #fff;
+        }   
+        .video-sec ul li a {
+            color: #000;
+            font-size: 14px;
+        }
+        .video-sec ul li:nth-child(4) {
+            border-right: none;
+        }
+    }
+    .total-div {
+        float: left;
+        width: 100%;
+        margin: 15px 0 5px 0;
+        span {
+            font-weight: 900;
+        }
+        p {
+            float: right;
+        }
+    }
+}

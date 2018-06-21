@@ -1,0 +1,96 @@
+page-about {
+    .abot-text{
+        p {
+            font-size: 17px;
+            line-height: 24px;
+            margin: 0;
+            padding: 0;
+            color: #272626;
+            border-bottom: solid 1px #e8e3e3;
+            padding-bottom: 30px;
+        }
+    }
+    .heading-sec.our-team{
+        margin: 30px 0 0 0;
+         h2 {
+            font-weight: 600;
+            font-size: 21px;
+            padding: 8px 0;
+        }
+    }
+    .row-border {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px #e8e3e3;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .about-img {
+            img {
+                border: solid 6px #ececec;
+            }
+       }
+       .about-text{
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                color: #272626;
+                margin: 0;
+            }
+            span {
+                font-size: 14px;
+                color: #272626;
+                margin: 4px 0 15px 0;
+                display: inline-block;
+            }
+            p {
+                font-size: 15px;
+                margin: 0;
+                line-height: 22px;
+                font-weight: normal;
+            }
+            ul {
+                float: left;
+                width: 100%;
+                padding: 0;
+                margin-bottom: 0;
+                li {
+                    list-style: none;
+                    float: left;
+                    margin-right: 15px;
+                    a {
+                        color: #e4894d;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 480px){ 
+    page-about {
+        .heading-sec.our-team{
+             h2 {
+                font-size: 18px;
+            }
+        }
+        .row-border {
+            .about-img {
+                width: 100% !important;
+                /* float: left; */
+                max-width: 100% !important;
+                flex: 100% !important;
+                text-align: center;
+            }
+            .about-text{ 
+                width: 100% !important;
+                /* float: left; */
+                max-width: 100% !important;
+                flex: 100% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle (click)="openMenu()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+   <ion-title>
+        <ion-row>
+      <h2 col-12>Christian Womanhood</h2>
+      <!-- <div col-2 class="hed-right">
+          <!-- <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div> -->
+          <!-- <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div>
+      </div>  -->
+    </ion-row>
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-grid>
+    <ion-row>
+      <ion-col col-12>
+           <div class="login-form">
+               <h3>Don't have an account?</h3>
+               <p><span>Create your account</span>, it takes less than a minute.</p>
+               <form (ngSubmit)="register(registerForm)" #registerForm="ngForm"novalidate>
+                  <div class="input-feild">
+
+                   <input type="text" placeholder="Name" [(ngModel)]="value.name"  placeholder="Name" name="name"  #name="ngModel" required>
+
+                   
+                      <div *ngIf="name.errors && (name.dirty || name.touched)">
+                        <div style="padding: 6px 0 6px 22px;
+                        color: red;" [hidden]="!name.errors.required" >
+                          *Field is required
+                          </div>
+                      </div>
+                  
+
+                   <input type="email" placeholder="E-mail address" [(ngModel)]="value.email"  name="email" id="email" required pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'  #email="ngModel">
+
+                 
+                      <div *ngIf="email.errors && (email.dirty || email.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                        color: red;" [hidden]="!email.errors.required">
+                          *Field is required
+                      </div>
+                          <div style="padding: 6px 0 6px 22px;
+                          color: red;" [hidden]="!email.errors.pattern">
+                          *In-valid Email
+                    </div>
+                      </div>
+
+                   <input type="password" placeholder="Password" [(ngModel)]="value.password" name="password" id="password" minlength="6" required   #password="ngModel">
+
+                  
+                      <div *ngIf="password.errors && (password.dirty || password.touched)">
+                        <div style="padding: 6px 0 6px 22px;
+                        color: red;" [hidden]="!password.errors.required">
+                          *Field is required
+                      </div>
+                      </div>
+                      <div *ngIf="password.errors && (password.dirty || password.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                        color: red;" [hidden]="!password.errors.minlength" >
+                          *Password should be at least 6 Characters long 
+                      </div>
+                      </div>
+                   
+
+                   <input type="password" placeholder="Confirm Password" [(ngModel)]="value.confirmpassword" name="confirmpassword" minlength="6" required  #confirmpassword="ngModel">
+
+                
+                      <div *ngIf="confirmpassword.errors && (confirmpassword.dirty || confirmpassword.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                        color: red;" [hidden]="!confirmpassword.errors.required" >
+                          *Field is required
+                      </div>
+                      </div>
+                      <div *ngIf="confirmpassword.errors && (confirmpassword.dirty || confirmpassword.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                        color: red;" [hidden]="!confirmpassword.errors.minlength" >
+                          *Password should be at least 6 Characters long 
+                      </div>
+                      </div>
+                 
+
+                  </div>
+                  <button type="submit" [disabled]="!registerForm.form.valid">Register</button>
+              </form>
+           </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+             <div class="login-text-form">
+              <a (click)="loginpage()"><h3>Already have an account?Login</h3></a>
+             </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>

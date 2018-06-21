@@ -1,0 +1,52 @@
+<ion-menu [content]="content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title><img src="assets/imgs/logo.png"/></ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+                <ion-list id="sidenav">
+                        <!-- other menu items will go here -->
+                        <a (click)="Homepage()"><ion-item><ion-icon ios="ios-home" md="md-home"></ion-icon></ion-item></a>
+
+
+                        <!-- <button ion-item (click)="toggleGroup(group)"> Subscriptions<ion-icon  md="ios-arrow-down"></ion-icon></button>
+                        
+                    
+                          <a (click)="subscription()"><ion-item submenu-item *ngIf="isGroupShown(group)" class="sub-menu"><ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward-outline"></ion-icon>Buy Subscriptions</ion-item></a>
+                         <a (click)="loginfirst()"> <ion-item submenu-item *ngIf="isGroupShown(group)" class="sub-menu"><ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward-outline"></ion-icon>Login</ion-item></a> -->
+
+                        <button ion-item (click)="toggleGroupsubs(group)"> Shop<ion-icon  md="ios-arrow-down"></ion-icon></button>
+                      
+                       
+                            <ion-item submenu-item *ngIf="isGroupShownsubs(group)" class="sub-menu">
+                              <div *ngFor = "let category of this.shopcategory" class="category" >
+                                <ion-item class="sub-menu" (click)="cat(category.cat_id,category.cat_name
+                                )">
+                                <ion-icon ios="ios-arrow-forward-outline" md="ios-arrow-forward-outline" >
+                                </ion-icon>
+                             {{category.cat_name}}
+                                </ion-item>
+                              </div>
+                            </ion-item>
+
+                            <a (click)="MeetLoreta()"><ion-item>Meet Loretta</ion-item></a>
+                        
+                          
+                          <a (click)="cwfridays()"><ion-item>CW Fridays</ion-item></a>
+                          <a *ngFor = "let menudata of this.datamenu">
+                            <ion-item (click)="categories(menudata.id)">{{menudata.name}}</ion-item>
+                          </a>
+                          <ion-item (click)="myaccount()">My Account</ion-item>
+                          <!-- <a href="#/app/settings"><ion-item>settings</ion-item></a> -->
+                          <a (click)="contact()"><ion-item>contact</ion-item></a>
+                          <a (click)="about()"><ion-item>About Us</ion-item></a>
+                        <!-- other menu items will go here -->
+                        </ion-list>
+         </ion-content>
+      </ion-menu>
+      
+      <ion-nav id="sidenav" #content [root]="rootPage"></ion-nav>
+
+
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->

@@ -1,0 +1,55 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+            <button ion-button menuToggle (click)="openMenu()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+      <ion-title>
+          <ion-row>
+        <h2 col-12>Christian Womanhood</h2>
+        <!-- <div col-2 class="hed-right">
+            <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div>
+            <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div>
+        </div> -->
+      </ion-row>
+      </ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+    <ion-row >
+      <ion-grid>
+          <ion-row class="border-bottom">
+              <ion-col col-10 >
+                  <h3>Notifications</h3>
+                  <p>Allow Notifications</p>
+              </ion-col>
+              <ion-col col-2 class="setting-text" >
+                  <form action="#">
+                      <p>
+                        <input type="checkbox" id="test1" />
+                        <label for="test1"></label>
+                      </p>
+                     
+                    </form>
+              </ion-col>
+          </ion-row>
+
+          <ion-row  class="border-bottom">
+              <ion-col col-10>
+                  <h3>Cache</h3>
+                  <p>Flush Cache</p>
+              </ion-col>
+              <ion-col col-2 class="setting-text" >
+    
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+  </ion-row >
+
+</ion-content>

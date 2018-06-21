@@ -1,0 +1,85 @@
+page-front-categories {
+    .evotions {
+        border-bottom: solid 1px #ccc;
+        a {
+          color: #000;
+          &:hover{
+            color: #e27926;
+          }
+        }
+        p{
+            float: left;
+            width: 100%;
+        }
+        .fusion-alignright{
+            a.fusion-read-more {
+                color: #e27926;
+                font-size: 18px;
+            }
+        }
+        h2{
+            a {
+             font-size: 20px;
+            }
+        }
+        .fusion-date-and-formats {
+            float: left;
+            width: 100%;
+            margin-bottom: 15px;
+            margin-top: 15px;
+             .fusion-date-box {
+                background-color: #1aa2a2;
+                border-color: #1aa2a2;
+                padding: 8px 5px;
+                float: left;
+                width: 90px;
+                height: 55px;
+                span.fusion-date {
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 16px;
+                }
+                span.fusion-month-year {
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            .fusion-format-box {
+                float: left;
+                width: 90px;
+                background: #eef0f2;
+                height: 55px;
+                text-align: center;
+                color: #e27926;
+                font-size: 20px;
+                padding: 20px 0px;
+                margin-left: 20px;
+            }
+            .fusion-alignright {
+                float: left;
+                width: 100%;
+                margin: 15px 0 0 0;
+            }
+        }
+        p.fusion-single-line-meta {
+            margin: 4px 0;
+        }
+        .fusion-alignright {
+            float: left;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+   }
+   .load-more {
+    text-align: center;
+    margin-top: 20px;
+    .button {
+    background-color: #17a1a1;
+    }
+    }
+   
+}

@@ -1,0 +1,72 @@
+page-my-account {
+    .calcilate-form {
+        background: #f7f7f7;
+        padding: 14px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 16px 0;
+        }
+        h4 {
+            font-size: 19px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0;
+        }
+        table, tbody, tr {
+            width: 100%;
+            display: inline-block;
+            th, td {
+                width: 50%;
+                float: left;
+                text-align: left;
+                font-size: 19px;
+                font-weight: inherit;
+                color: #242424;
+                padding: 6px 0;
+            }
+            td {
+                text-align: right;
+            }
+            tr.cart-total {
+                border-top: solid 1px #e2e2e2;
+                margin-top: 14px;
+                padding-top: 10px;
+                th, td {
+                    font-weight: 900;
+                }
+            }
+        }
+        .dashbord {
+            float: left;
+            width: 100%;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    width: 100%;
+                    float: left;
+                    border-bottom: solid 1px #d1d1d1;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    a {
+                        font-size: 20px;
+                        color: #444444;
+                        font-weight: normal;
+                        padding: 15px 0;
+                        display: inline-block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

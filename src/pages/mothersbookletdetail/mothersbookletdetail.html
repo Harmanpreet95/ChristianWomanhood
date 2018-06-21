@@ -1,0 +1,135 @@
+<!-- @Author -->
+<!--************
+*************-->
+<!-- Harman -->
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+    
+     <ion-title>
+          <ion-row>
+        <h2 col-12>Christian Womanhood</h2>
+      </ion-row>
+      </ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+   <ion-row >
+    <ion-grid>
+        <ion-row>
+          <ion-col col-12 class="details-page">
+
+              <div class="detai-img"><img [src]="this.image"></div>
+             
+              <p [innerHTML]="this.singledata.desc">{{this.singledata.desc}}</p>
+
+              <ion-row *ngIf="this.category == 'Recurring Monthly Payments'">
+                  <ion-col col-12 >
+                  
+                      <!-- <p>Number of Booklets</p> -->
+                
+                     <form #subForm="ngForm">
+                        <table>
+                        <tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td>
+                           <!-- <ion-item>
+                             <ion-label>d</ion-label>
+                          <ion-select [(ngModel)]="Select An option"  name="os0" multiple="true">
+                          
+                          <ion-option value="10 Magazines:$12.50 USD - monthly">10 Magazines : $12.50 USD - monthly</ion-option>
+                          <ion-option value="15 Magazines:$18.75 USD - monthly">15 Magazines : $18.75 USD - monthly</ion-option>
+                          <ion-option value="20 Magazines:$25.00 USD - monthly">20 Magazines : $25.00 USD - monthly</ion-option>
+                          <ion-option value="25 Magazines:$31.25 USD - monthly">25 Magazines : $31.25 USD - monthly</ion-option>
+                          <ion-option value="30 Magazines:$37.50 USD - monthly">30 Magazines : $37.50 USD - monthly</ion-option>
+                          <ion-option value="50 Magazines:$62.50 USD - monthly">50 Magazines : $62.50 USD - monthly</ion-option>
+                        </ion-select>
+                      </ion-item> </td></tr> -->
+                      <p>Select an option</p>
+                      <ion-item>
+                          <ion-label>Choose an Option</ion-label>
+                          <ion-select name = "title" #t [(ngModel)]="this.title" (ionChange)="select(t.value,this.category)" required>
+                              <ion-option *ngFor="let optval of this.allopt" value={{optval}}>{{optval}}</ion-option>
+                              <!-- <ion-option value="15 Magazines:$18.75 USD - monthly">15 Magazines : $18.75 USD - monthly</ion-option>
+                              <ion-option value="20 Magazines:$25.00 USD - monthly">20 Magazines : $25.00 USD - monthly</ion-option>
+                              <ion-option value="25 Magazines:$31.25 USD - monthly">25 Magazines : $31.25 USD - monthly</ion-option>
+                              <ion-option value="30 Magazines:$37.50 USD - monthly">30 Magazines : $37.50 USD - monthly</ion-option>
+                              <ion-option value="50 Magazines:$62.50 USD - monthly">50 Magazines : $62.50 USD - monthly</ion-option> -->
+                            </ion-select>
+                          </ion-item>
+                        </table>
+                   
+                       <button style="background-color:#e07118;" ion-button type="submit" value="Subscribe Now" [disabled]="!subForm.form.valid" (click)="recurring()">Subscribe Now</button>
+                      </form>
+
+                        
+                        
+                     
+                   
+                  </ion-col>
+                </ion-row>
+             
+
+                <ion-row *ngIf="this.category != 'Recurring Monthly Payments'">
+                  <ion-col col-12 >
+                  
+                      <!-- <p>Number of Booklets</p> -->
+                
+                      <form #subForm1="ngForm">
+                     
+                        <table>
+                        <tr><td><input type="hidden" name="on0" value="Number of Booklets">Number of Booklets</td></tr><tr><td>
+
+
+                          <!-- <select name="os0" #t (change)="select(t.value)">
+                          <option value="--Select An option--">--Select An option--</option>
+                          <option value="15 Booklets:$25.25 USD">15 Booklets $25.25 USD</option>
+                          <option value="20 Booklets:$31.50 USD">20 Booklets $31.50 USD</option>
+                          <option value="25 Booklets:$38.25 USD">25 Booklets $38.25 USD</option>
+                          <option value="50 Booklets:$77.50 USD">50 Booklets $77.50 USD</option>
+                          <option value="75 Booklets:$108.75 USD">75 Booklets $108.75 USD</option>
+                          <option value="100 Booklets:$140.00 USD">100 Booklets $140.00 USD</option>
+                        </select> </td></tr> -->
+
+                        <ion-item>
+                            <ion-label>Choose an Option</ion-label>
+                            <ion-select name = "title" #t [(ngModel)]="this.title"           (ionChange)="select(t.value,this.category)" required=''>
+                                <ion-option *ngFor="let optionsval of this.allopt"  value={{optionsval}}>{{optionsval}}</ion-option>
+                                <!-- <ion-option value="20 Booklets:$31.50 USD">20 Booklets $31.50 USD</ion-option>
+                                <ion-option value="25 Booklets:$38.25 USD">25 Booklets $38.25 USD</ion-option>
+                                <ion-option value="50 Booklets:$77.50 USD">50 Booklets $77.50 USD</ion-option>
+                                <ion-option value="75 Booklets:$108.75 USD">75 Booklets $108.75 USD</ion-option>
+                                <ion-option value="100 Booklets:$140.00 USD">100 Booklets $140.00 USD</ion-option> -->
+                              </ion-select>
+                            </ion-item>
+
+
+                        </table>
+                        <button style="background-color:#e07118;" ion-button type="submit" value="Subscribe Now" [disabled]="!subForm1.form.valid" (click)="mothersbooklet()">Subscribe Now</button>
+                        <!-- <a class="add-details-cart" (click)="mothersbooklet()">Subscribe Now</a> -->
+                       
+                        </form>
+                     
+                   
+                  </ion-col>
+                </ion-row>
+<!-- 
+              <a (click)="BillingMethod(selectedDevice,this.singledata.desc,this.image)" *ngIf="this.category == 'Recurring Monthly Payments'" class="add-details-cart">Subscribe</a>
+              <a (click)="BillingMethod(selectedDevice,this.singledata.desc,this.image)" *ngIf="this.category != 'Recurring Monthly Payments'" class="add-details-cart">Buy Now</a> -->
+          </ion-col>
+      </ion-row> 
+    </ion-grid>
+  </ion-row>
+
+
+</ion-content>
+
+    
+
+  

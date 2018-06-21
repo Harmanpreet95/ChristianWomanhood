@@ -1,0 +1,42 @@
+<!--
+  Generated template for the MyAccountPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle (click)="openMenu()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+     <ion-title>
+          <ion-row>
+        <h2 col-12>Christian Womanhood</h2>
+        <!-- <div col-1 class="hed-right"> -->
+            <!-- <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div> -->
+            <!-- <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div> -->
+        <!-- </div> -->
+      </ion-row>
+      </ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+    <ion-row>
+        <ion-col col-12>
+          <div class="calcilate-form">
+               <h3>My Account</h3>
+               <div class="dashbord">
+                 <ul>
+                   <!-- <li><a (click) = "MyAccountyOrder()">Orders</a></li>  -->
+                   <!-- <li><a href="#">Downloads</a></li>   -->
+                   <!-- <li><a (click) = "MyAccountAddress()">Addresses</a></li>    -->
+                   <li><a (click) = "AccountAccountDetailsPage()">Account details</a></li>  
+                   <!-- <li><a href="#">Access Magazine</a></li>    -->
+                   <li><a (click) = "Logout()">Logout</a></li>   
+                </ul>  
+               </div>
+          </div>
+        </ion-col>
+      </ion-row>  
+</ion-content>

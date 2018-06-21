@@ -1,0 +1,71 @@
+
+page-checkout-shipping-address {
+    .calcilate-form {
+        background: #f7f7f7;
+        padding: 14px;
+        display: inline-block;
+        width: 100%;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 16px 0;
+        }
+        textarea {
+            border: solid 1px #d2d2d2;
+            color: #888888;
+            font-size: 16px;
+            background: #fff;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-weight: normal;
+            height: 100px;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            float: left;
+            background: #e27926;
+            border: none;
+            padding: 8px 40px;
+            font-size: 18px;
+            color: #fff;
+            font-weight: normal;
+            border-radius: 25px;
+        }
+        p {
+            margin: 0 0 20px 0;
+            font-size: 16px;
+            color: #2e2e2e;
+            input[type="checkbox"] {
+                margin-right: 6px;
+            }
+        } 
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    page-checkout-shipping-address  {
+        .calcilate-form {
+            h3 {
+                font-size: 19px;
+            }
+            textarea {
+                font-size: 14px;
+            }
+            input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    }   
+}
+@media screen and (max-width: 360px) {
+    page-checkout-shipping-address {
+        .cart-header{
+            h5 {
+             font-size: 15px;
+           }
+         }
+    }
+}

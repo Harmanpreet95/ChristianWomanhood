@@ -1,0 +1,261 @@
+page-shopcart {
+    ion-row.cart-page.row {
+        padding-top: 42px;
+    }
+    .cart-header{
+        min-height: auto;
+       .toolbar-background.toolbar-background {
+            background: #e27926;
+            border: none !important;
+       }
+       h5 {
+        color: #fff;
+        margin: 6px 0;
+        font-size: 20px;
+        font-weight: normal;
+      }
+    }
+    .cart-img {
+        float: left;
+        border: solid 5px #ececec;
+        width: 12%;  
+        img {
+            width: 100%;
+            float: left;
+        }
+    }
+    .cart-content {
+        float: left;
+        margin-left: 4%;
+        width: 84%;
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+        p {
+            font-size: 19px;
+            color: #474747;
+            margin: 12px 0;
+        }
+        form {
+            width: 100%;
+            float: left;
+        }
+        .value-button {
+            display: inline-block;
+            border: 1px solid #a3a3a3;
+            margin: 0px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px 0;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-size: 20px;
+        }
+        .value-button:hover {
+            cursor: pointer;
+        }
+        
+        form #decrease {
+            margin-right: -5px;
+            margin-top: -4px;
+        }
+        
+        form #increase {
+            margin-left: -4px;
+            margin-top: -4px;
+        }
+        
+        form #input-wrap {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        input#number {
+            text-align: center;
+            border: none;
+            border: 1px solid #a3a3a3;
+            margin: 0px;
+            width: 50px;
+            height: 40px;
+            color: #000;
+        }
+        
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+    }
+    .cart-page{
+        button {
+            font-size: 18px;
+            background: transparent;
+            border: solid 1px #e1e1e1;
+            width: 100%;
+            padding: 12px 10px;
+            font-weight: normal;
+            margin: 20px 0;
+            ion-icon {
+                color: #9b9b9b;
+                margin-right: 10px;
+            }  
+        } 
+    }
+    .calcilate-form {
+        background: #f7f7f7;
+        padding: 14px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 16px 0;
+        }
+        select, input[type="text"] {
+            border: solid 1px #d2d2d2;
+            color: #888888;
+            font-size: 16px;
+            background: #fff;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .slect-inner {
+            float: left;
+            width: 100%;
+            select {
+                width: 48%;
+            }
+            input[type="text"] {
+                width: 48%;
+                float: right;
+            }
+        }
+        input[type="submit"] {
+            float: right;
+            background: #e27926;
+            border: none;
+            padding: 8px 20px;
+            font-size: 18px;
+            color: #fff;
+            font-weight: normal;
+            border-radius: 25px;
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+        select {
+            background-image: url(../assets/imgs/select-arrow.png);
+            background-repeat: no-repeat;
+            background-position: 96%;
+            padding: 10px 22px 10px 10px;
+        }
+        table, tbody, tr {
+            width: 100%;
+            display: inline-block;
+            th, td {
+                width: 50%;
+                float: left;
+                text-align: left;
+                font-size: 19px;
+                font-weight: inherit;
+                color: #242424;
+                padding: 6px 0;
+            }
+            td {
+                text-align: right;
+            }
+            tr.cart-total {
+                border-top: solid 1px #e2e2e2;
+                margin-top: 14px;
+                padding-top: 10px;
+                th, td {
+                    font-weight: 900;
+                }
+            }
+        }
+        
+    } 
+    .checkout-button {
+         a {
+            width: 50%;
+            float: left;
+            text-align: center;
+            font-size: 21px;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 4px;
+        }
+        a.cart-update{
+            background: #e27926;
+        }
+        a.cart-checkout{
+            background: #17a1a1
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    page-cart {
+        .cart-img {
+            width: 18%;  
+        }
+        .cart-content {
+            width: 78%;
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 17px;
+                margin: 6px 0;
+            }
+        }
+        .calcilate-form {
+            margin-bottom: 24px;
+            h3 {
+                font-size: 19px;
+            }
+            select, input[type="text"] {
+                font-size: 14px;
+            }
+            input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+        .checkout-button {
+            a {
+               font-size: 15px;
+           }
+        }
+        table, tbody, tr {
+            th, td {
+                font-size: 16px !important;
+            }
+        }
+    }   
+}
+@media screen and (max-width: 360px) {
+    page-cart {
+        .checkout-button {
+            a { 
+            font-size: 13px;
+           }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+page-cwfridays {
+    .youtubelink{
+        text-align: right;
+        padding: 0;
+    }
+    .video-sec {
+        margin: 10px 0;
+        iframe{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    page-cwfridays {
+        .video-sec {
+            margin: 5px 0; 
+        } 
+    }  
+}

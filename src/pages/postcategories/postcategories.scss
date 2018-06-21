@@ -1,0 +1,61 @@
+page-postcategories {
+    .youtubelink{
+        text-align: right;
+        padding: 0;
+    }
+    .video-sec {
+        margin: 10px 0;
+        img{
+            width: 100%;
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+        margin: 10px 0 0 0;
+        font-size: 18px;
+    letter-spacing: 0;
+    }
+    .padd-inner {
+        border-bottom: solid 1px #ececec;
+    }
+    .padd-inner:last-child{
+        border-bottom:none;
+    }
+    ion-col.video-sec.col {
+        margin: 10px 0 0 0;
+    }
+    ul {
+        padding: 0;
+        width: 100%;
+        float: left;
+        margin-left: -10px; 
+         li {
+            list-style: none;
+            float: left;
+            padding: 0px 10px;
+            border-right: solid 1px #ccc;
+            font-size: 14px;
+            margin: 2px 0;
+            color: #000;
+            a {
+               list-style: none;
+               float: left;
+               font-size: 14px;
+               color: #000;
+            }
+         }
+       }
+       button {
+        background: #17a1a1;
+        color: #fff;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+    page-cwfridays {
+        .video-sec {
+            margin: 5px 0; 
+        } 
+    }  
+}

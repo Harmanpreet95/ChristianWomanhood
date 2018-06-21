@@ -1,0 +1,181 @@
+page-register {
+    .login-logo {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        a {
+            display: inline-block;
+            img {
+                width: 170px;
+            }
+        }
+    }
+    .login-form {
+        width: 84%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 50%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #ccc;
+            margin: auto;
+        }
+         h3 {
+            text-align: center;
+            font-size: 26px;
+            text-transform: uppercase;
+            margin: 12px 0 8px 0 !important;
+            display: inline-block;
+            width: 100%;
+        }
+        p {
+            font-size: 24px;
+            text-align: center;
+            padding: 0 20px;
+            margin: 0 0 10px 0;
+            span {
+                color: #f9671e;
+            }
+        }
+        .input-feild {
+            float: left;
+            width: 100%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 8px !important;
+            margin: 20px 0;
+            input[type="email"], input[type="text"] {
+                font-size: 21px;
+                width: 100%;
+                border: none;
+                padding: 24px 25px 24px 80px;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+                border-bottom: solid 2px #e5e5e5;
+                background-image: url(../assets/imgs/email.png);
+                background-repeat: no-repeat;
+                background-position: 25px center;
+                font-family: 'Open Sans', sans-serif;
+            }
+            input#password {
+                border-bottom: solid 2px #e5e5e5;
+                border-radius: 0;
+            }
+            input[type="email"] {
+                background-image: url(../assets/imgs/email.png);
+            }
+            input[type="text"] {
+                background-image: url(../assets/imgs/name-f.png);
+            }
+            input[type="password"] {
+                font-size: 21px;
+                width: 100%;
+                border: none;
+                padding: 24px 25px 24px 80px;
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                background-image: url(../assets/imgs/login.png);
+                background-repeat: no-repeat;
+                background-position: 25px center;
+                font-family: 'Open Sans', sans-serif;
+            }
+             input::-webkit-input-placeholder { 
+                color: #3d3d3d;
+              }
+              input::-moz-placeholder {
+                color: #3d3d3d;
+              }
+              input:-ms-input-placeholder {
+                color: #3d3d3d;
+              }
+              input:-moz-placeholder { 
+                color: #3d3d3d;
+             }  
+       } 
+       button {
+            width: 100%;
+            background: #f9671e;
+            border: none;
+            border-radius: 8px;
+            padding: 16px 10px;
+            font-size: 21px;
+            color: #fff;
+            font-weight: 400;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    .login-back button.disable-hover.bar-button.bar-button-md.bar-button-clear.bar-button-clear-md {
+        padding: 0;
+        margin: 0;
+        ion-icon {
+            font-size: 2em;
+        }
+    }
+    .login-text-form{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin-top: 20px;
+        h3 {
+            color: #ccc;
+            font-size: 18px;
+            text-align: center;
+            text-align: center;
+            border-bottom: solid 1px #ccc;
+            display: inline-block;
+        }
+    }
+}
+
+/******************************************************media**********************************/
+@media screen and (max-width: 640px) {
+    page-register {
+        .login-form { 
+            width: 100%;
+        
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    page-register {
+        .login-form { 
+            h3 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        
+        .input-feild {
+            input[type="email"], input[type="text"] {
+                padding: 18px 20px 18px 66px !important;
+                font-size: 17px !important;
+            }
+            input[type="password"] {
+                padding: 18px 20px 18px 66px !important;
+                font-size: 17px !important;
+            }
+            input {
+                background-size: 26px;
+            }
+       } 
+       .login-text-form{
+        h3 {
+            font-size: 15px;
+        }
+    }
+    }  
+    
+}
+@media screen and (max-width: 400px) {
+      
+}
+@media screen and (max-width: 350px) {
+    
+}    

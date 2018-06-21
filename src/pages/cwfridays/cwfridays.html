@@ -1,0 +1,64 @@
+<!--
+  Generated template for the CwfridaysPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle (click)="openMenu()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+      <ion-title>
+          <ion-row>
+        <h2 col-12>Christian Womanhood</h2>
+        <!-- <div col-1 class="hed-right"> -->
+            <!-- <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div> -->
+            <!-- <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div> -->
+        <!-- </div> -->
+      </ion-row>
+      </ion-title>
+      
+    </ion-navbar>
+ </ion-header>
+
+
+<ion-content padding>
+    <ion-grid class="padd-inner">
+        <ion-row>
+          <ion-col col-9 class="heading-sec" >
+              <h2>CW Fridays</h2> 
+              <p>Audio Inspiration Every Friday</p>
+          </ion-col>
+          <ion-col col-3 class="youtubelink">
+              <a href="#"><img src="assets/imgs/youtube-img.png"></a>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-row *ngFor = "let videos of Cwfridaysdata">
+  
+        <ion-col col-12 class="video-sec" >
+                <iframe [src]="videos" frameborder="0" width="560" height="315"></iframe>
+                <!-- <iframe style="width:100%" [src]="videos" allowfullscreen></iframe> -->
+                <!-- <iframe [src]="_DomSanitizationService.bypassSecurityTrustHtml(https://www.youtube.com/embed/_BFpylqipVo?wmode=transparent&autoplay=0)"></iframe> -->
+        </ion-col>
+     
+    </ion-row>
+
+    <!-- <ion-row>
+        <ion-col col-12 class="video-sec" >
+            <img src="assets/imgs/cw-video.jpg">
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12 class="video-sec" >
+            <img src="assets/imgs/cw-video.jpg">
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12 class="video-sec" >
+            <img src="assets/imgs/cw-video.jpg">
+        </ion-col>
+    </ion-row> -->
+
+</ion-content>

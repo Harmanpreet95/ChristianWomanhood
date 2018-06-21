@@ -1,0 +1,369 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+#sidenav {
+    ion-item-group[sidemenu] {
+      overflow: hidden;
+      display: block;
+      height: 0;
+      transition: height .3s linear;
+      &.visible {
+          height: 300px;
+          // this is just sample value, calculate how much space you need for your menu items
+      }
+    }
+  }
+h1, h2, h3, h4, h5, h6, p, a, input, select, textarea, button{
+    font-family: 'Open Sans', sans-serif;
+}
+
+  .toolbar {
+    padding: 4px 16px;
+    min-height: 60px;
+    /* background: #000; */
+}
+.toolbar-background {
+    border-color: #017979 !important;
+    background: #17a1a1;
+    border-bottom: solid 4px #017979 !important;
+}
+.show-menu .toolbar-background.toolbar-background{
+border-color: #ffffff;
+background: #fff;
+border-bottom: none;    
+}
+.toolbar-ios ion-title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.toolbar-ios ion-title {
+    left: inherit;
+    top: inherit;
+    padding: inherit;
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    -webkit-transform: inherit;
+    transform: inherit;
+    pointer-events: inherit;
+}
+.ios ion-nav > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-title{
+    padding-top: 0px;
+}
+.show-menu .toolbar-title {
+    padding: 0;
+    text-align: center;
+}
+.header-md::after{
+    display: none;
+}
+.menu-inner .scroll-content, .menu-inner .scroll-content ion-list#sidenav, .item  {
+    background: #1ba2a2;
+    padding: 0;
+    color: #fff;
+}
+span.back-button-text.back-button-text-ios {
+    font-size: 0;
+}
+a {
+    text-decoration: none;
+}
+.menu-inner .scroll-content ion-list#sidenav  {
+    padding: 0 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.toolbar-title h2 {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    width: 77%;
+    font-size: 19px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 34px;
+    padding: 0;
+}
+.button-clear {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.show-menu  .label {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+.show-menu  ion-label.label.label ion-icon.icon.icon.ion-ios-arrow-down.item-icon {
+    float: right;
+    padding-top: 2px;
+}
+ion-item.sub-menu.item.item-block.item ion-label.label.label {
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+ion-item.sub-menu.item.item-block.item ion-label.label.label ion-icon.icon.icon.ion-ios-arrow-forward-outline.item-icon {
+    padding-right: 10px;
+    padding-top: 2px;
+    float: left;
+}
+.hed-right {
+    float: right;
+    padding: 6px 0 0px 0;
+    text-align: right;
+    color: #fff;
+    height: 34px;
+}
+.search {
+    display: inline-block;
+    margin: 0 6px;
+    padding: 0 2px;
+}
+.bar-button-menutoggle {
+    margin: 0;
+    padding: 0;
+    min-width: auto;
+}
+.cart {
+    display: inline-block;
+    margin: 0 0 0 6px;
+    padding: 0 0 0 2px;
+    position: relative;
+}
+.cart span {
+    position: absolute;
+    top: -6px;
+    right: 0;
+    background: #000;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px;
+    line-height: 9px;
+    min-width: 13px;
+    z-index: 9999999;
+    text-align: center;
+}
+.toolbar-title {
+    padding-left: 0;
+    padding-right: 0px; 
+}
+span.button-inner {
+    color: #fff;
+}
+.show-menu .item-inner {
+    padding: 0 !important;
+}
+.list .item-block .item-inner, .category {
+    border-bottom: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(to left, #096f6f 0%, #4ccbcb 100%);
+    -webkit-border-image: -webkit-linear-gradient(to left, #096f6f 0%, #4ccbcb 100%);
+    border-image: linear-gradient(to left, #096f6f 0%, #4ccbcb 100%);
+    border-image-slice: 1;
+    border-right:0;
+    border-left: 0;
+    border-top: 0
+} 
+ion-item.sub-menu.item.item-block.item-md ion-label.label.label-md {
+    padding: 0;
+}
+.category {
+    padding: 10px 12px;
+}
+.category:last-child{
+    border: none !important;
+}
+.row {
+    margin: 0 -5px !important;
+}
+ion-header.header.header .row {
+    margin: 0 0 !important;
+}
+.back-button {
+    margin: 0;
+    min-width: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-align: left;
+    padding: 0;
+}
+.heading-sec {
+    border-left: solid 5px #1ba2a2;
+    padding: 0 0 0 12px;
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    p {
+        font-size: 15px;
+        color: #e07118;
+        margin: 0;
+    } 
+    
+}
+.padd-inner {
+    padding: 8px 5px 20px;
+}
+ion-col.heading-sec.inner-heading.col {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button.disable-hover.bar-button.bar-button.bar-button-clear.bar-button-clear {
+    padding: 0;
+    margin: 0;
+}
+page-login .login-back button.disable-hover.bar-button.bar-button.bar-button-clear.bar-button-clear ion-icon {
+    font-size: 2em;
+}
+ion-icon.icon.icon.ion-ios-arrow-back-outline {
+    font-size: 2em;
+}
+.searchbar-md .searchbar-input {
+    padding: 0px 10px;
+    border-radius: 2px;
+    background-position: left 8px center;
+    height: auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #ffffff;
+    background-color: transparent;
+    -webkit-box-shadow: initial;
+    box-shadow: initial;
+    border-bottom: solid 1px #fff;
+    border-radius: 0;
+}
+.searchbar .searchbar-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  .searchbar .searchbar-input::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  .searchbar .searchbar-input:-ms-input-placeholder { /* IE 10+ */
+    color:#fff;
+  }
+  .searchbar .searchbar-input:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+h2.to-ser .searchbar-search-icon {
+    display: none;
+}
+.searchbar .searchbar-clear-icon { 
+    right: 0;
+    top: 0;
+    background-image: url( ../assets/imgs/cross.png);
+    background-size: 14px !important;
+
+}
+h2.to-ser ion-searchbar.searchbar.ng-untouched.ng-pristine.ng-valid.searchbar-left-aligned {
+    padding: 0 3px;
+}
+.ios ion-nav > .ion-page > .toolbar.statusbar-padding:first-child ion-segment, 
+.ios ion-nav > .ion-page > .toolbar.statusbar-padding:first-child ion-title, 
+.ios ion-nav > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-segment,
+ .ios ion-nav > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-title, 
+ .ios ion-tab > .ion-page > .toolbar.statusbar-padding:first-child ion-segment, 
+ .ios ion-tab > .ion-page > .toolbar.statusbar-padding:first-child ion-title, 
+ .ios ion-tab > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-segment, 
+ .ios ion-tab > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-title, 
+ .ios ion-tabs > .ion-page.tab-subpage > ion-header > .toolbar.statusbar-padding:first-child ion-segment,
+  .ios ion-tabs > .ion-page.tab-subpage > ion-header > .toolbar.statusbar-padding:first-child ion-title, 
+  .ios ion-menu > .menu-inner > .toolbar.statusbar-padding:first-child ion-segment, 
+  .ios ion-menu > .menu-inner > .toolbar.statusbar-padding:first-child ion-title, 
+  .ios ion-menu > .menu-inner > ion-header > .toolbar.statusbar-padding:first-child ion-segment, 
+  .ios ion-menu > .menu-inner > ion-header > .toolbar.statusbar-padding:first-child ion-title{
+      padding-top: 0px !important;
+      height: initial; 
+min-height: initial;
+  }
+  ion-item.sub-menu.item.item-block.item ion-label.label.label{
+      padding: 0px;
+  }
+  .category .item-block{
+    min-height: initial;
+  }
+  .category .item-inner{
+      border: none !important;
+  }
+  .category:last-child{
+      border: none;
+  }
+  .toolbar .searchbar-ios .searchbar-input{
+    background: transparent;
+    border-bottom: solid 1px #fff;
+    height: 26px;
+  }
+  .searchbar-ios.searchbar-left-aligned .searchbar-input{
+    padding-left: 0px;
+  }
+  .searchbar-ios .searchbar-input{
+    padding: 0px;
+    border-radius: 0px;
+    height: initial;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+  } 
+  .searchbar-ios{
+min-height: initial;
+border-top: 0px solid transparent;
+  }
+/******************************************************media**********************************/
+@media(max-width: 480px){ 
+    .toolbar-title h2 {
+        font-size: 17px;
+    }  
+    .search {
+        margin: 0;
+        padding: 0;
+    } 
+    .bar-button-menutoggle {
+        margin: 0 0px 0 0px;
+    }
+}  
+@media(max-width: 360px){ 
+    .toolbar-title h2 {
+        font-size: 14px;
+    }  
+    .cart {
+        margin: 0 0 0 1px;
+    }
+    .toolbar-title h2 {
+        font-size: 16px;
+    } 
+}

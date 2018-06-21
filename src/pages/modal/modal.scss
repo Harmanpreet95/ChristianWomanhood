@@ -1,0 +1,32 @@
+page-modal {
+    ion-content.content {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .scroll-content {
+        background: #fff;
+        bottom: initial;
+        top: 28%;
+        z-index: 999;
+        height: 240px;
+        width: 200px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        img {
+            width: 30px;
+        }
+        h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .button {
+            background:#017979;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+}

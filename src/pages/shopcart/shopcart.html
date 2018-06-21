@@ -1,0 +1,148 @@
+<!--
+  Generated template for the CartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle (click)="openMenu()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+      <ion-title>
+          <ion-row>
+        <h2 col-11>Christian Womanhood</h2>
+        <div col-1 class="hed-right">
+            <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div>
+            <!-- <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div> -->
+        </div>
+      </ion-row>
+      </ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-header >
+      <ion-navbar class="toolbar cart-header">
+        <div class="toolbar-background "></div>
+          <h5>My Cart (1 Product)</h5>
+        </ion-navbar>
+    </ion-header>
+    
+  <ion-row class="cart-page">
+   <ion-grid>
+     <ion-row>
+       <ion-col col-12>
+          <div class="cart-img"><img src="assets/imgs/cart-img.jpg"></div>
+          <div class="cart-content">
+              <h2>Bulk Dropship (10 Quantity Minimum)</h2>
+              <p>Price: $15.00 </p>
+              <form>
+                  <div class="value-button" id="decrease" (click)="decreaseValue(value)" value="Decrease Value">-</div>
+                  <input type="number" id="number" [(ngModel)]="value" name="value"/>
+                  <div class="value-button" id="increase" (click)="increaseValue(value)" value="Increase Value">+</div>
+                </form>
+          </div>
+          <button><ion-icon ios="ios-trash" md="ios-trash"></ion-icon>Remove</button>
+        </ion-col>
+     </ion-row>
+   </ion-grid>
+  </ion-row>
+  
+   <ion-row>
+      <ion-col col-12>
+        <div class="calcilate-form">
+          <form>
+             <h3>CALCULATE SHIPPING </h3>
+             <select>
+                    <option value="AF">India</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BA">Bosnia And Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+              </select>
+              <div class="slect-inner">
+                  <select>
+                      <option value="s">Select an option</option>
+                      <option value="s">Select an option</option>
+                      <option value="s">Select an option</option>
+                      <option value="s"> Select an option</option>
+                      <option value="s">Select an option</option>
+                </select>
+                <input type="text" name="country_code" placeholder="Postcode / ZIP" >
+              </div>
+              <input type="submit" value="Update Totals">
+          </form>
+        </div>
+      </ion-col>
+    </ion-row>  
+  
+    <ion-row>
+        <ion-col col-12>
+          <div class="calcilate-form">
+            <form>
+               <h3>HAVE A PROMOTIONAL CODE?</h3>
+                  <input type="text" name="country_code" placeholder="Coupon Code" >
+                <input type="submit" value="Apply Coupon">
+            </form>
+          </div>
+        </ion-col>
+      </ion-row> 
+  
+      <ion-row>
+          <ion-col col-12>
+            <div class="calcilate-form">
+                 <h3>CART TOTALS</h3>
+                 <table cellspacing="0">
+                   <tbody>
+                      <tr class="cart-subtotal">
+                        <th>Subtotal</th>
+                        <td data-title="Subtotal">$15.00</td>
+                      </tr>
+                      <tr class="cart-shipping">
+                          <th>Shipping</th>
+                          <td data-title="Subtotal"></td>
+                        </tr>
+                        <tr class="cart-tax">
+                            <th>Tax</th>
+                            <td data-title="Subtotal"></td>
+                          </tr>
+                          <tr class="cart-total">
+                              <th>Total</th>
+                              <td data-title="Subtotal">$15.00</td>
+                            </tr>
+                   </tbody>
+                 </table>  
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12 class="checkout-button">
+             <a class="cart-update" href="#">Update Cart</a>
+             <a class="cart-checkout" href="#/app/checkout-billing-address">Proceed To Checkout</a>
+          </ion-col>
+       </ion-row>
+  </ion-content>
+  

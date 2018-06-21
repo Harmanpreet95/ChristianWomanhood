@@ -1,0 +1,100 @@
+<!--
+  Generated template for the AccountBillingAddressPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+
+    <ion-title>
+        <ion-row>
+      <h2 col-12>Christian Womanhood</h2>
+      <!-- <div col-1 class="hed-right"> -->
+          <!-- <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div> -->
+          <!-- <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div>
+      </div> -->
+    </ion-row>
+    </ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-row *ngIf = "this.showaddressbilling == '1'">
+        <ion-col col-12>
+            <div class="calcilate-form">
+              <ion-row>
+                <ion-col col-8>
+                  <h3>Customer Billing details</h3>
+                  <ul>
+                    <li>{{this.databill.first_name}} {{this.databill.last_name}}</li>
+                    <li>{{this.databill.email}}</li>
+                    <li>{{this.databill.address_1}},{{this.databill.country}}</li>
+                    <li>{{this.databill.country}}, {{this.databill.state}} {{this.databill.postcode}}</li>
+                  </ul>
+                </ion-col>
+                <ion-col col-4 class="edit-button">
+                  <a (click) = "AccountBillingAddressEdit()">edit</a>
+                </ion-col>
+              </ion-row>
+            </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row *ngIf = "this.showaddressbilling == '0'">
+          <ion-col col-12>
+              <div class="calcilate-form">
+                <ion-row>
+                  <ion-col col-8>
+                    <h3>Customer Shipping details</h3>
+                  </ion-col>
+                  <ion-col col-4 class="edit-button">
+                    <a (click) = "AccountBillingAddressEdit()">ADD</a>
+                  </ion-col>
+                </ion-row>
+              </div>
+          </ion-col>
+        </ion-row>
+
+      <ion-row *ngIf = "this.showaddress == '1'">
+          <ion-col col-12>
+            <div class="calcilate-form">
+              <ion-row>
+                <ion-col col-8>
+                 <h3>Customer Shipping details</h3>
+                  <ul>
+                    <li>{{this.dataship.first_name}} {{this.dataship.last_name}}</li>
+                    <li>{{this.dataship.email}}</li>
+                    <li>{{this.dataship.address_1}},{{this.dataship.country}}</li>
+                    <li>{{this.dataship.country}}, {{this.dataship.state}} {{this.dataship.postcode}}</li>
+                 </ul>
+               </ion-col>
+               <ion-col col-4 class="edit-button">
+                  <a (click) = "AccountShippingAddressEditPage()">edit</a>
+               </ion-col>
+             </ion-row>
+          </div>
+          </ion-col>
+        </ion-row>
+ 
+        <ion-row *ngIf = "this.showaddress == '0'">
+            <ion-col col-12>
+              <div class="calcilate-form">
+                <ion-row>
+                  <ion-col col-8>
+                   <h3>Customer Shipping details</h3>
+           
+                 </ion-col>
+                 <ion-col col-4 class="edit-button">
+                    <a (click) = "AccountShippingAddressEditPage()">ADD</a>
+                 </ion-col>
+               </ion-row>
+            </div>
+            </ion-col>
+          </ion-row>
+</ion-content>
+
+

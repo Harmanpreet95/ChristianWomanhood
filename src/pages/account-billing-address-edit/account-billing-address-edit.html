@@ -1,0 +1,144 @@
+<!--
+  Generated template for the AccountBillingAddressEditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+
+      <ion-title>
+          <ion-row>
+        <h2 col-10>Christian Womanhood</h2>
+        <!-- <div col-2 class="hed-right"> -->
+            <!-- <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div>
+            <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div>
+        </div> -->
+      </ion-row>
+      </ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+        <ion-row>
+            <ion-col col-12>
+              <div class="calcilate-form">
+                <form #BillingForm="ngForm" (ngSubmit)="Billing(BillingForm)">
+                    <h3>Billing details</h3>
+                    <div class="slect-inner">
+
+                      <input type="text" placeholder="First Name" name='firstname' [(ngModel)]='value.first_name' #firstname="ngModel" required>
+
+                      <div *ngIf="firstname.errors && (firstname.dirty || firstname.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!firstname.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                      <input type="text" placeholder="Last Name" name='lastname' [(ngModel)]='value.last_name' #lastname="ngModel" required>
+
+                      <div *ngIf="lastname.errors && (lastname.dirty || lastname.touched)" >
+                          <div style="padding: 6px 0 6px 22px;
+                              color: red;" [hidden]="!lastname.errors.required" >
+                                *Field is required
+                          </div>
+                        </div>
+
+                    </div>
+
+                  <input type="text" placeholder="Address 1" name='address1' [(ngModel)]='value.address_1' #address1="ngModel" required>
+
+                  <div *ngIf="address1.errors && (address1.dirty || address1.touched)" >
+                      <div style="padding: 6px 0 6px 22px;
+                          color: red;" [hidden]="!address1.errors.required" >
+                            *Field is required
+                      </div>
+                    </div>
+
+                    <input type="text" placeholder="Address 2" name='address2' [(ngModel)]='value.address_2' #address2="ngModel" required>
+
+                    <div *ngIf="address2.errors && (address2.dirty || address2.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!address2.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                    <input type="text" placeholder="City" name='city' [(ngModel)]='value.city' #city="ngModel" required>
+
+                    <div *ngIf="city.errors && (city.dirty || city.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!city.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                    <input type="text" placeholder="State" name='state' [(ngModel)]='value.state' #state="ngModel" required>
+
+                    <div *ngIf="state.errors && (state.dirty || state.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!state.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                    <input type="text" placeholder="Country" name='country' [(ngModel)]='value.country' #country="ngModel" required>
+
+                    <div *ngIf="country.errors && (country.dirty || country.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!country.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                    <input type="text" placeholder="Phone" name='phone' [(ngModel)]='value.phone' #phone="ngModel" required>
+
+                    <div *ngIf="phone.errors && (phone.dirty || phone.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!phone.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                    <input type="text" placeholder="Postcode" name='postcode' [(ngModel)]='value.postcode' #postcode="ngModel" required>
+
+                    <div *ngIf="postcode.errors && (postcode.dirty || postcode.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!postcode.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                    <input type="text" placeholder="Company" name='company' [(ngModel)]='value.company' #company="ngModel" required>
+
+                    <div *ngIf="company.errors && (company.dirty || company.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!company.errors.required" >
+                              *Field is required
+                        </div>
+                      </div>
+
+                    <input type="email" placeholder="user@gmail.com" name='email' [(ngModel)]='value.email' #email="ngModel" required pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'>
+
+                    <div *ngIf="email.errors && (email.dirty || email.touched)" >
+                        <div style="padding: 6px 0 6px 22px;
+                            color: red;" [hidden]="!email.errors.required" >
+                              *Field is required
+                        </div>
+                        <div style="padding: 6px 0 6px 22px;
+                        color: red;"[hidden]="!email.errors.pattern" >
+                           *In-valid Email
+                        </div>
+                      </div>
+
+                    <input type="submit" value="Save Address">
+                </form>
+              </div>
+            </ion-col>
+          </ion-row>  
+        
+  </ion-content>
+  

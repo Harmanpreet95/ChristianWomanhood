@@ -1,0 +1,57 @@
+<!--
+  Generated template for the EvotionsDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle (click)="openMenu()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+    <ion-title>
+        <ion-row>
+      <h2 col-12>Christian Womanhood</h2>
+      <!-- <div col-1 class="hed-right"> -->
+          <!-- <div class="search"><ion-icon ios="ios-search-outline" md="ios-search-outline"></ion-icon></div> -->
+          <!-- <div class="cart"> <ion-icon ios="ios-unlock-outline" md="ios-unlock-outline"></ion-icon></div> -->
+      <!-- </div> -->
+    </ion-row>
+    </ion-title>
+    
+  </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-12 class="evotions-det">
+      <img [src]="allposts.image">
+      <h2><a href="#">{{allposts.post_title}}</a></h2>
+      <div class="fusion-text">
+        <div [innerHTML]="allposts.desc"></div>
+        <!-- <p class="p1">“Mommy, can you fix my toy?” “Mommy, will you play with me?” “Mommy, I’m thirsty!” With little ones in the home, the demands on a mom can be overwhelming. Caring for little ones doesn’t even begin to cover all of the tasks that life requires of a mother. With daunting to-do lists and needy children, mothers can quickly become caught up in the mundane chores of life and neglect their purpose as mothers—investing in the lives of their children.</p> -->
+        <!-- <p class="p1">When it comes to investing in the lives of our children, I love the teaching of Deuteronomy 6:6 and 7, which says, <b><i>“And these words, which I command thee this day, shall be in thine heart: And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up.” </i></b></p>
+        <p class="p1">Two main principles seem to jump out of these verses when I think about investing in the lives of my children.</p>
+        <p class="p2"><b>1. In order to invest in the lives of my children, I must first invest in me. </b>At first, this statement may seem a bit selfish—“me time”! Although every mom longs for a little “me time” every now and then, that’s not exactly the time to which I’m referring here. We must take a certain time for ourselves each day to develop our walk with the Lord. Notice that verse 6 establishes that the&nbsp;words of the Lord must first be in the heart of the parent before they can be passed down to the heart of the child. If I do not personally develop a relationship with the Lord, then surely I cannot expect my children to develop one.</p>
+        <p class="p1">My time with the Lord is vital to my survival as a mom. Numerous demands—both planned and unplanned—meet every mom every day. If I attempt to tackle those demands in my own strength, I will quickly become tired and end the day with feelings of inadequacy and failure. However, if I am faithful to start each day with the Lord, I don’t have to conquer the day alone. Instead, I move on in the power of the Holy Spirit, which means that my parenting and my influence over my children will be Spirit-filled instead of self-filled.</p>
+        <p class="p1">I must understand that in order to pass on genuine faith to my children, they must see a genuine faith lived out in me. Children know a hypocrite when they see one. If I am not living out before them what I am teaching, then I should not expect them to develop a genuine faith. Be real. Choose to have a relationship with the Lord that your children will want to emulate. Remember, you cannot truly teach your children to follow God if you do not follow Him yourself.</p>
+        <p class="p1"><b>2. I invest in the lives of my children through teaching, praying, and playing. </b></p>
+        <p class="p1"><b>• </b><span class="s1"><b>TEACH. </b></span>Through Biblical principles, teach them right from wrong in every activity of life, just as verse 7 instructs. Our job as mothers is to prepare our children to handle life by applying Biblical principles. They learn what to do and how to react from what they see in us. Remember, you are always teaching.</p>
+        <p class="p1">• <span class="s1"><b>PRAY. </b></span>How much do you pray for your children? Do you have a list? Do you take them before the Lord daily in prayer? If I as a mom do not take my children before the throne of God in prayer, who will? We should pray not only <i>for </i>our children, but also <i>with </i>our children. You teach your child to pray by praying. Make sure they hear you pray on a regular basis. Ask them to pray. Some of the sweetest times we have each day are at family devotions before bed. I love to hear my little boy pray for his family and his friends. Are <i>you </i>praying with your children?</p>
+        <p class="p1">• <span class="s1"><b>PLAY. </b></span>You’ve heard the statement, “No one cares how much you know until they know how much you care.” The same is true with your children. They know that you care when you invest in them by spending time with them. Play with them, imagine with them, sing with them, and laugh with them. These kinds of activities are what wins the heart of a child. Once you have your child’s heart, he will listen to what you have to teach him.</p>
+        <p class="p3">Your greatest investment isn’t found in a 401K or in material possessions, but rather in the lives of your children. How are you contributing to that investment today?</p> -->
+        </div>
+        <p class="fusion-single-line-meta">
+          By <span class="vcard"><span class="fn"><a href="#">{{allposts.author}}</a></span></span>
+          <span class="fusion-inline-sep">|</span>
+          <!-- <span class="updated rich-snippet-hidden">2018-01-02T15:03:54+00:00</span> -->
+          <span>{{allposts.date}}</span>
+          <span class="fusion-inline-sep">|</span>
+          <a href="">{{allposts.category_name}}</a> 
+          <!-- <a href="">Marriage</a>, 
+          <a href="">Motherhood</a> -->
+          <span class="fusion-inline-sep">|</span>
+          <span class="fusion-comments"><a href="">{{allposts.comments_count}} Comment</a></span>
+   </p>
+    </ion-col>
+</ion-row>
+</ion-content>

@@ -1,0 +1,36 @@
+page-meetloretta {
+    .imgmeet {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        img {
+            border: solid 7px #ececec;
+        }
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        float: left;
+        width: 100%;
+        margin: 6px 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            float: left;
+            margin: 0 15px 0 0;
+            a {
+                color: #ccc;
+                font-size: 20px;
+            }
+        }
+    }
+    h2 {
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+}

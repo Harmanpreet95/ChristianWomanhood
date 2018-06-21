@@ -1,0 +1,145 @@
+page-my-accounty-order {
+    .account-border {
+        border-bottom: solid 1px #e0dfdf;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &:first-child {
+            padding-top: 0 !important;
+        }
+        &:last-child {
+            border: none !important;
+        }
+    }
+    .acc-img {
+        img {
+          border: solid 6px #ececec;
+          padding: 4px;
+        }
+    }
+    .acc-text{ 
+        h4 {
+          font-size: 24px;
+          font-weight: 600;
+          color: #000;
+          margin-bottom: 15px;
+        }
+        p {
+            font-size: 19px;
+            color: #474747;
+            margin: 0;
+            float: left;
+        }
+        p.quantity-right {
+            float: right;
+        }
+    }
+    .acc-status{
+        p {
+            font-size: 18px;
+            margin: 0 0 5px 0;
+            color: #474747;
+            span {
+                color: #17a1a1;
+            }
+            span.acc-color {
+                color: #e27926;
+            }
+        }
+    }
+    .acc-status.acc-right {
+        text-align: right;
+    }
+    .calcilate-form {
+        background: #f7f7f7;
+        padding: 14px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 16px 0;
+        }
+        table, tbody, tr {
+            width: 100%;
+            display: inline-block;
+            th, td {
+                width: 50%;
+                float: left;
+                text-align: left;
+                font-size: 19px;
+                font-weight: inherit;
+                color: #242424;
+                padding: 6px 0;
+            }
+            td {
+                text-align: right;
+            }
+            tr.cart-total {
+                border-top: solid 1px #e2e2e2;
+                margin-top: 14px;
+                padding-top: 10px;
+                th, td {
+                    font-weight: 900;
+                }
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            float: left;
+            width: 100%;
+            li {
+                font-size: 19px;
+                color: #242424;
+                list-style: none;
+                padding-bottom: 8px;
+                font-weight: 400;
+            }
+        }
+        
+    }
+    ion-row.row:last-child .calcilate-form {
+        margin-bottom: 0;
+    } 
+}
+
+@media screen and (max-width: 480px){
+    page-my-accounty-order {
+        .acc-text{ 
+            h4 {
+              font-size: 18px;
+              font-weight: 600;
+              color: #000;
+              margin-bottom: 7px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        .acc-status{
+            p {
+                font-size: 16px;
+            }
+        }
+        table, tbody, tr {
+            th, td {
+                font-size: 16px !important;
+            }
+        }
+        .calcilate-form {
+            margin-bottom: 20px;
+            h3 {
+                font-size: 19px;
+            }
+            ul {
+                li {
+                    font-size: 16px;
+                    padding-bottom:5px;
+                }
+            }
+        }
+        
+    }   
+}
